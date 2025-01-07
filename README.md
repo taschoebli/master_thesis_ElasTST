@@ -1,3 +1,6 @@
+# Master Thesis Time-Series Forecasting
+This project is based on https://github.com/microsoft/ProbTS
+
 # ElasTST (NeurIPS 2024)
 
 This `elastst` branch is the official implementation of “ElasTST: Towards Robust Varied-Horizon Forecasting with Elastic Time-Series Transformer”. It is designed to reproduce all results reported in the paper.
@@ -27,8 +30,8 @@ ElasTST is developed with Python 3.10 and relies on [PyTorch Lightning](https://
 
   ```bash
   # Clone ProbTS repo
-  git clone https://github.com/microsoft/ProbTS.git
-  cd ProbTS
+  git https://github.com/taschoebli/master_thesis_ElasTST.git
+  cd master_thesis_ElasTST
 
   # Switch to ElasTST branch
   git pull origin elastst:elastst
@@ -39,8 +42,8 @@ ElasTST is developed with Python 3.10 and relies on [PyTorch Lightning](https://
 
   ```bash
   # Create a new conda environment
-  conda create -n elastst python=3.10
-  conda activate elastst
+  #conda create -n elastst python=3.10
+  #conda activate elastst
 
   # Install required packages
   pip install .

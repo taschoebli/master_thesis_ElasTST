@@ -1,5 +1,5 @@
-DATA_DIR=/path/to/datasets
-LOG_DIR=/path/to/log_dir
+DATA_DIR=datasets
+LOG_DIR=log_dir
 
 CTX_LEN=96
 
@@ -8,10 +8,10 @@ VAL_PRED_LEN=720
 TEST_PRED_LEN=720
 
 # select from ['etth1', 'etth2', 'ettm1', 'ettm2', 'traffic_ltsf', 'electricity_ltsf', 'exchange_ltsf', 'weather_ltsf']
-DATASET='exchange_ltsf' 
+DATASET='weather_ltsf'
 
 # select from ['elastst', 'autoformer', 'dlinear', 'patchtst', 'transformer_enc', 'tsmixer']
-MODEL=tsmixer
+MODEL=elastst
 
 python run.py --config config/baselines/${DATASET}/${MODEL}.yaml --seed_everything 0  \
     --data.data_manager.init_args.path ${DATA_DIR} \
