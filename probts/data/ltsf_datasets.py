@@ -25,7 +25,7 @@ def get_LTSF_info(dataset):
         else:
             data_path = 'ETT-small/ETTm2.csv'
         freq = 'min'
-    elif dataset in ['traffic_ltsf', 'electricity_ltsf', 'exchange_ltsf', 'illness_ltsf', 'weather_ltsf']:
+    elif dataset in ['traffic_ltsf', 'electricity_ltsf', 'exchange_ltsf', 'illness_ltsf', 'weather_ltsf', 'power']:
         if dataset == 'traffic_ltsf':
             data_path = 'traffic/traffic.csv'
             freq = 'h'
@@ -40,6 +40,9 @@ def get_LTSF_info(dataset):
             freq = 'W'
         elif dataset == 'weather_ltsf':
             data_path = 'weather/weather.csv'
+            freq = 'min'
+        elif dataset == 'power':
+            data_path = 'power/power.csv'
             freq = 'min'
     elif dataset == 'caiso':
         data_path = 'caiso/caiso_20130101_20210630.csv'

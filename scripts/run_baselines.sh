@@ -1,13 +1,13 @@
 DATA_DIR=datasets
 LOG_DIR=log_dir
 
-CTX_LEN=96
+CTX_LEN=96 # lookback window
 
 TRAIN_PRED_LEN=720
 VAL_PRED_LEN=720
 TEST_PRED_LEN=720
 
-# select from ['etth1', 'etth2', 'ettm1', 'ettm2', 'traffic_ltsf', 'electricity_ltsf', 'exchange_ltsf', 'weather_ltsf']
+# select from ['etth1', 'etth2', 'ettm1', 'ettm2', 'traffic_ltsf', 'electricity_ltsf', 'exchange_ltsf', 'weather_ltsf', 'power']
 DATASET='weather_ltsf'
 
 # select from ['elastst', 'autoformer', 'dlinear', 'patchtst', 'transformer_enc', 'tsmixer']
