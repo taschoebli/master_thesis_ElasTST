@@ -23,4 +23,4 @@ python run.py --config config/${MODEL}.yaml --seed_everything 0  \
     --data.data_manager.init_args.train_pred_len_list ${TRAIN_PRED_LEN} \
     --data.data_manager.init_args.train_ctx_len_list ${TRAIN_CTX_LEN} \
     --data.data_manager.init_args.val_pred_len_list ${VAL_PRED_LEN} \
-    --trainer.max_epochs 50
+    --trainer.max_epochs 25
