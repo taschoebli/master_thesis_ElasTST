@@ -86,7 +86,7 @@ python run.py --config config/elastst.yaml \
 
 - `DATASET_NAME`: Select from
     ```bash 
-    ['etth1', 'etth2','ettm1','ettm2','traffic_ltsf', 'electricity_ltsf', 'exchange_ltsf', 'weather_ltsf']
+    ['etth1', 'etth2','ettm1','ettm2','traffic_ltsf', 'electricity_ltsf', 'exchange_ltsf', 'weather_ltsf', 'power_ltsf']
     ```
 - `CTX_LEN`: Context length in the validation and testing phase.
 - `TRAIN_CTX_LEN`: Context length in the training phase.

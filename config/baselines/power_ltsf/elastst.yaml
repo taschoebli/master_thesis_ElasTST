@@ -39,7 +39,7 @@ data:
   data_manager:
     class_path: probts.data.data_manager.DataManager
     init_args:
-      dataset: power
+      dataset: power_ltsf
       split_val: true
       scaler: standard # identity, standard, temporal
       context_length: 96
