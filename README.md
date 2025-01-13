@@ -42,8 +42,11 @@ ElasTST is developed with Python 3.10 and relies on [PyTorch Lightning](https://
 
   ```bash
   # Create a new conda environment
-  #conda create -n elastst python=3.10
-  #conda activate elastst
+  conda create -n elastst python=3.10
+  conda activate elastst
+  
+  # Install lightning in environment
+  conda install lightning -c conda-forge
 
   # Install required packages
   pip install .
