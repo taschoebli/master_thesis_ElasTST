@@ -82,6 +82,9 @@ def get_LTSF_borders(dataset, data_size):
     return border_begin, border_end
 
 def get_LTSF_Dataset(root_path, data_path, freq='h', timeenc=1, multivariate=True):
+    # Debug
+    print(f"freq: {freq}, timeenc: {timeenc}, multivariate: {multivariate}")
+
     if 'caiso' in data_path:
         data = pd.read_csv(root_path + data_path)
         data['Date'] = data['Date'].astype('datetime64[ns]')
@@ -132,4 +135,8 @@ def get_LTSF_Dataset(root_path, data_path, freq='h', timeenc=1, multivariate=Tru
     df_raw = df_raw.fillna(0)
     target_dim = len(df_raw.columns) if multivariate else 1
     data_size = len(df_raw)
+
+    # Debug
+    print(f"df_raw: {df_raw}, data_stamp: {data_stamp}, target_dim: {target_dim}, data_size: {data_size}")
+
     return df_raw, data_stamp, target_dim, data_size
