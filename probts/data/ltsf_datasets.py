@@ -133,9 +133,7 @@ def get_LTSF_Dataset(root_path, data_path, freq='h', timeenc=1, multivariate=Tru
         data_stamp = None
         
     df_raw = df_raw.fillna(0)
-    #target_dim = len(df_raw.columns) if multivariate else 1
-    # TODO think about this. Changed to 1 for ony dc power prediction (first column after date)
-    target_dim = 1
+    target_dim = len(df_raw.columns) if multivariate else 1
     data_size = len(df_raw)
 
     # Debug
